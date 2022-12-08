@@ -31,9 +31,10 @@ function isPalindrome(word) {
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
   // add your own custom tests in here
-   expect(isPalindrome("racecar")).to.be.true;
+  isPalindrome("racecar") === true;
 
-   expect(isPalindrome("robot")).to.be.false;
+  isPalindrome("robot") === false;
+
 }
 
 module.exports = isPalindrome;
