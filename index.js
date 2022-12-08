@@ -8,6 +8,7 @@ function isPalindrome(word) {
   return word.toLowerCase() === reversedWord
 
 }
+console.log("returns:" ,isPalindrome("radar"));
 
 /* 
   Add your pseudocode here
@@ -31,9 +32,23 @@ function isPalindrome(word) {
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
   // add your own custom tests in here
-  isPalindrome("racecar") === true;
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("racecar"));
 
-  isPalindrome("robot") === false;
+  console.log("");
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("radar"));
+
+  console.log("");
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("robot"));
+
+  console.log("");
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("is"));
 
 }
 
